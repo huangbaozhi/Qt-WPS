@@ -14,6 +14,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void initMainWindow();
+    void docNew();
+
+private slots:
+    void on_newAction_triggered();
+
+private:
+    void formatEnabled();
 
 private:
     Ui::MainWindow *ui;
